@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Becas</title>
+  </head>
+  <body>
+    <div id="container">
+      <center>
+        <div class="row" id="chat-ventana">
+          <div class="col">
+            <hr />
+            <h1 style="text-transform: uppercase; color: #fff">
+              Beca según estrato y edad
+            </h1>
+            <hr />
+            <table class="tablaMain table table-bordered">
+              <thead class="thead table-light">
+                  <tr>
+                      <th scope="row">Descripción</th>
+                      <th scope="row">Valores</th>
+                  </tr>
+              </thead>
+              <tbody class="table-dark">
+                <tr>
+                  <td>Nombre</td>
+                  <td>
+                    <input type="text" name="nom" id="nom" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Apellido</td>
+                  <td>
+                    <input type="text" name="ape" id="ape" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Edad</td>
+                  <td>
+                    <input type="number" name="edad" id="edad" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Estrato</td>
+                  <td>
+                    <select name="selecEstrato" id="selecEstrato">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <!-- Botón -->
+            <table class="table-dark table-striped">
+              <tr>
+                <td>
+                  <button class="btn btn-success" onclick="guardar()">
+                    Guardar
+                  </button>
+                </td>
+              </tr>
+            </table>
+            <!-- Fin del botón -->
+            <br />
+            <h2>Estudiantes mayores de 15 y menores que 16</h2>
+            <br />
+            <table
+              class="table table-bordered table-hover table-dark table-striped"
+            >
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Estrato</th>
+              <th>Valor</th>
+              <tbody id="beca1"></tbody>
+            </table>
+
+            <br />
+            <h2>Estudiantes mayores de 17 y menores que 19</h2>
+            <br />
+            <table
+              class="table table-bordered table-hover table-dark table-striped"
+            >
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Estrato</th>
+              <th>Valor</th>
+              <tbody id="beca2"></tbody>
+            </table>
+
+            <br />
+            <h2>Estudiantes mayores de 20 y menores que 22</h2>
+            <br />
+            <table
+              class="table table-bordered table-hover table-dark table-striped"
+            >
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Estrato</th>
+              <th>Valor</th>
+              <tbody id="beca3"></tbody>
+            </table>
+
+            <br />
+            <h2>Estudiantes mayores de 22 y menores que 25</h2>
+            <br />
+            <table
+              class="table table-bordered table-hover table-dark table-striped"
+            >
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Estrato</th>
+              <th>Valor</th>
+              <tbody id="beca4"></tbody>
+            </table>
+            <br />
+            <br />
+            <table class="table border-success table-bordered tablaFin">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Estrato</th>
+                  <th>Número de becas</th>
+                </tr>
+              </thead>
+              <tbody id="cuerpoFinal"></tbody>
+            </table>
+          </div>
+        </div>
+      </center>
+    </div>
+    <!-- Boostrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Codigo JavaScript -->
+    <script src="codigo.js"></script>
+  </body>
+</html>
