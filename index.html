@@ -25,10 +25,10 @@
             <hr />
             <table class="tablaMain table table-bordered">
               <thead class="thead table-light">
-                  <tr>
-                      <th scope="row">Descripción</th>
-                      <th scope="row">Valores</th>
-                  </tr>
+                <tr>
+                  <th scope="row">Descripción</th>
+                  <th scope="row">Valores</th>
+                </tr>
               </thead>
               <tbody class="table-dark">
                 <tr>
@@ -53,8 +53,8 @@
                   <td>Estrato</td>
                   <td>
                     <select name="selecEstrato" id="selecEstrato">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
+                      <option id="uno" value="1">1</option>
+                      <option id="dos" value="2">2</option>
                     </select>
                   </td>
                 </tr>
@@ -78,12 +78,26 @@
             <table
               class="table table-bordered table-hover table-dark table-striped"
             >
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Estrato</th>
-              <th>Valor</th>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Edad</th>
+                  <th>Estrato</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
               <tbody id="beca1"></tbody>
+              <table
+                class="table table-bordered table-hover table-dark table-striped"
+              >
+                <thead>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th id="totalUno"></th>
+                  </tr>
+                </thead>
+              </table>
             </table>
 
             <br />
@@ -92,12 +106,26 @@
             <table
               class="table table-bordered table-hover table-dark table-striped"
             >
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Estrato</th>
-              <th>Valor</th>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Edad</th>
+                  <th>Estrato</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
               <tbody id="beca2"></tbody>
+              <table
+                class="table table-bordered table-hover table-dark table-striped"
+              >
+                <thead>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th id="totalDos"></th>
+                  </tr>
+                </thead>
+              </table>
             </table>
 
             <br />
@@ -106,12 +134,26 @@
             <table
               class="table table-bordered table-hover table-dark table-striped"
             >
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Estrato</th>
-              <th>Valor</th>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Edad</th>
+                  <th>Estrato</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
               <tbody id="beca3"></tbody>
+              <table
+                class="table table-bordered table-hover table-dark table-striped"
+              >
+                <thead>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th id="totalTres">#</th>
+                  </tr>
+                </thead>
+              </table>
             </table>
 
             <br />
@@ -120,23 +162,39 @@
             <table
               class="table table-bordered table-hover table-dark table-striped"
             >
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Edad</th>
-              <th>Estrato</th>
-              <th>Valor</th>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Edad</th>
+                  <th>Estrato</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
               <tbody id="beca4"></tbody>
+              <table
+                class="table table-bordered table-hover table-dark table-striped"
+              >
+                <thead>
+                  <tr>
+                    <th>TOTAL</th>
+                    <th id="totalCuatro">#</th>
+                  </tr>
+                </thead>
+              </table>
             </table>
             <br />
             <br />
-            <table class="table border-success table-bordered tablaFin">
+
+            <table class="table table-bordered tablaFin">
               <thead class="thead-dark">
                 <tr>
                   <th>Estrato</th>
                   <th>Número de becas</th>
                 </tr>
               </thead>
-              <tbody id="cuerpoFinal"></tbody>
+              <tbody id="cuerpoFinal" class="table" table-primary></tbody>
+              <tbody id="cuerpoFinal2" class="table" table-primary></tbody>
             </table>
           </div>
         </div>

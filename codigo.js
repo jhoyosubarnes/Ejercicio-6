@@ -2,16 +2,22 @@ var salidaB1 = "";
 var salidaB2 = "";
 var salidaB3 = "";
 var salidaB4 = "";
+var salidaF = "";
+var salidaF2 = "";
 var cantidad = 1000000;
 var cantidad2 = 1000000 / 2;
 var cantidad3 = parseInt(1000000 / 2.5);
 var cantidad4 = parseInt(1000000 / 6.66666);
+var contador = 0;
 
 function guardar() {
   var nom = document.getElementById("nom").value;
   var ape = document.getElementById("ape").value;
   var edad = parseFloat(document.getElementById("edad").value);
   var estrato = document.getElementById("selecEstrato").value;
+
+  /*  var a = document.getElementById("uno").value-1;
+  var b = document.getElementById("dos").value; */
 
   if (edad >= 15 && edad <= 16) {
     salidaB1 +=
@@ -92,14 +98,24 @@ function guardar() {
       }
     }
   }
-
   limpiarcaja();
+  /* funtion Limpliar cajas */
+  // myFunction();
+
+  salidaF += "<tr><th>" + estrato + "</th><th>" + uno + "</th></tr>";
+  document.getElementById("cuerpoFinal").innerHTML = salidaF;
 }
 
 function limpiarcaja() {
   document.getElementById("nom").value = "";
   document.getElementById("ape").value = "";
   document.getElementById("edad").value = "";
-  document.getElementById("estrato").value = "";
   document.getElementById("nom").focus();
+}
+
+function myFunction() {
+  let elem = document.querySelectorAll("#selecEstrato");
+  elem.forEach((element) => {
+    element.addEventListener("click", (e) => {});
+  });
 }
